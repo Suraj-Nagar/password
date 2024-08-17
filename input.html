@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex justify-center min-h-full lg:py-14 bg-sky-950 text-white">
+    <div class=" border-2 border-white flex flex-col justify-center px-7 py-4 w-96 relative ">
+        <h1 class="text-center text-lg font-semibold">Password Generator</h1>    
+        <textarea id="resul" class="w-72 h-6 my-4 px-2 text-sm text-black rounded-sm ml-7"placeholder="click on Generate button"></textarea>
+        <div class="my-3 ml-5 text-center">
+            <button onclick="generateR()" class="border-1 rounded-sm bg-blue-500 font-bold  text-center text-sm px-4 py-1" id="b-1">Generate</button>
+            <button class="border-1 rounded-sm bg-blue-500  font-bold text-center text-sm px-4 py-1" id="cli" onclick="copyToClipboard()">Copy To Clipboard</button>
+        </div>
+        <label for="comments" class=" font-semibold mb-2">password length
+        <input type="number" id="comments" name="comments" class="px-3 w-14 py-2 bg-transparent border-2 border-white h-5 absolute right-9 text-xs">
+    </label>
+        <label for="subscribe" class="font-semibold">Include uppercase letters
+            <input type="checkbox" id="upper" name="subscribe" class=" absolute right-9">
+        </label>
+        <label for="subscribe" class="font-semibold">Include lowercase letters
+            <input type="checkbox" id="lower" name="subscribe" class=" absolute right-9">
+        </label>
+        <label for="subscribe" class="font-semibold">Include numbers
+            <input type="checkbox" id="number" name="subscribe" class=" absolute right-9">
+        </label>
+        <label for="subscribe" class="font-semibold">Include symbols
+            <input type="checkbox" id="symbol" name="subscribe" class=" absolute right-9">
+        </label>
+        
+    </div>
+    <script src="pa.js"></script>
+</body>
+</html>
